@@ -2187,10 +2187,11 @@ You can use NVAs to secure the traffic going between the local Vnets and the rem
 
 # End the lab
 
-To end the lab, simply delete the resource group that you created in the first place (vnetTest in our example) from the Azure portal or from the Azure CLI: 
+To end the lab, simply delete the resource group that you created in the first place (vnetTest in our example) from the Azure portal or from the Azure CLI, and clear the Azure CLI group environment variable: 
 
 ```
 az group delete --name vnetTest
+az configure --defaults group=
 ```
 
 
